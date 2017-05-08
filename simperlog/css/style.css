@@ -162,7 +162,7 @@ a img {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #555;
 }
 html {
@@ -341,6 +341,7 @@ a {
 }
 .article-share-link {
   cursor: pointer;
+  float: right;
 }
 .article-share-link:before {
   content: "\f064";
@@ -349,7 +350,6 @@ a {
 }
 .article-footer {
   zoom: 1;
-  text-align: center;
   font-size: 0.85em;
   line-height: 0.85em;
   border-top: 1px solid #ddd;
@@ -371,6 +371,14 @@ a {
 .article-footer a:hover {
   color: #555;
 }
+.article-tag-list-item {
+  float: left;
+  margin-right: 10px;
+  color: #bbb;
+}
+.article-tag-list-item:before {
+  content: "#";
+}
 .article-share-box {
   position: absolute;
   display: none;
@@ -380,18 +388,13 @@ a {
   border-radius: 3px;
   margin-left: -145px;
   z-index: 1;
-  -webkit-transform: translateX(50%);
-  -moz-transform: translateX(50%);
-  -o-transform: translateX(50%);
-  -ms-transform: translateX(50%);
-  transform: translateX(50%);
 }
 .article-share-box.on {
   display: block;
 }
 .article-share-twitter,
 .article-share-facebook,
-.article-share-pinterest,
+.article-share-linkedin,
 .article-share-google {
   width: 50px;
   height: 36px;
@@ -403,7 +406,7 @@ a {
 }
 .article-share-twitter:before,
 .article-share-facebook:before,
-.article-share-pinterest:before,
+.article-share-linkedin:before,
 .article-share-google:before {
   font-size: 20px;
   line-height: 20px;
@@ -419,7 +422,7 @@ a {
 }
 .article-share-twitter:hover,
 .article-share-facebook:hover,
-.article-share-pinterest:hover,
+.article-share-linkedin:hover,
 .article-share-google:hover {
   color: #eee !important;
 }
@@ -437,12 +440,12 @@ a {
   background: #3b5998;
   text-shadow: 0 1px #2f477a;
 }
-.article-share-pinterest:before {
-  content: "\f0d2";
+.article-share-linkedin:before {
+  content: "\f0e1";
 }
-.article-share-pinterest:hover {
-  background: #cb2027;
-  text-shadow: 0 1px #a21a1f;
+.article-share-linkedin:hover {
+  background: #0077b5;
+  text-shadow: 0 1px #005f91;
 }
 .article-share-google:before {
   content: "\f0d5";
@@ -645,7 +648,7 @@ a {
 }
 .article-entry pre,
 .article-entry code {
-  font-family: 'Source Code Pro', monospace;
+  font-family: Consolas, Monaco, Menlo, Consolas, monospace;
   font-weight: 600;
 }
 .article-entry code {
@@ -709,7 +712,7 @@ a {
 }
 .article-entry .gist .gist-file {
   border: none;
-  font-family: 'Source Code Pro', monospace;
+  font-family: Consolas, Monaco, Menlo, Consolas, monospace;
   font-weight: 600;
   margin: 0;
 }

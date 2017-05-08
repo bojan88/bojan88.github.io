@@ -22,15 +22,17 @@
 <meta name="twitter:image" content="https://bojan88.github.io/assets/wallpaper-2572384.jpg">
   
   
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-  
+
+  <script type="text/javascript">
+  function jqueryLoaded() {
+    window.postMessage('jquery-load', '*');
+  }
+  </script>
+
   <link rel="stylesheet" href="/simperlog/css/style.css">
-  
 
-  <script defer async src="https://use.fontawesome.com/a49b4f783c.js"></script>
-
+  <script defer src="https://use.fontawesome.com/a49b4f783c.js"></script>
+  <script defer src="//code.jquery.com/jquery-3.2.1.min.js" onload="jqueryLoaded()"></script>
   <script defer src="/simperlog/js/script.js"></script>
 </head>
 
@@ -68,32 +70,31 @@
 <div class="article-gallery">
   <div class="article-gallery-photos">
     
-      <a data-fancybox="gallery" class="article-gallery-img fancybox" href="/simperlog/assets/wallpaper-2572384.jpg" rel="gallery_cj2ezw8o900065hwdtbm01yy1">
+      <a data-fancybox="gallery" class="article-gallery-img fancybox" href="/simperlog/assets/wallpaper-2572384.jpg" rel="gallery_cj2geqq470006hmwdub1l89mb">
         <img src="/simperlog/assets/wallpaper-2572384.jpg" itemprop="image">
       </a>
     
-      <a data-fancybox="gallery" class="article-gallery-img fancybox" href="/simperlog/assets/wallpaper-2311325.jpg" rel="gallery_cj2ezw8o900065hwdtbm01yy1">
+      <a data-fancybox="gallery" class="article-gallery-img fancybox" href="/simperlog/assets/wallpaper-2311325.jpg" rel="gallery_cj2geqq470006hmwdub1l89mb">
         <img src="/simperlog/assets/wallpaper-2311325.jpg" itemprop="image">
       </a>
     
-      <a data-fancybox="gallery" class="article-gallery-img fancybox" href="/simperlog/assets/wallpaper-878514.jpg" rel="gallery_cj2ezw8o900065hwdtbm01yy1">
+      <a data-fancybox="gallery" class="article-gallery-img fancybox" href="/simperlog/assets/wallpaper-878514.jpg" rel="gallery_cj2geqq470006hmwdub1l89mb">
         <img src="/simperlog/assets/wallpaper-878514.jpg" itemprop="image">
       </a>
     
-      <a data-fancybox="gallery" class="article-gallery-img fancybox" href="http://placehold.it/350x150.jpg" rel="gallery_cj2ezw8o900065hwdtbm01yy1">
+      <a data-fancybox="gallery" class="article-gallery-img fancybox" href="http://placehold.it/350x150.jpg" rel="gallery_cj2geqq470006hmwdub1l89mb">
         <img src="http://placehold.it/350x150.jpg" itemprop="image">
       </a>
     
   </div>
 </div>
-<script defer src="//code.jquery.com/jquery-3.2.1.min.js" onload="appendCss()"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
 <script type="text/javascript">
-function appendCss() {
-  setTimeout(function() {
+window.addEventListener("message", function() {
+  if(msg.data === 'jquery-load') {
     $('head').append('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />');
-  }, 0);
-}
+  }
+});
 </script>
 
 
@@ -121,17 +122,18 @@ function appendCss() {
     </div>
     
       <footer class="article-footer">
-        <a data-url="https://bojan88.github.io/simperlog/2013/12/25/gallery-post/" data-id="cj2ezw8o900065hwdtbm01yy1" class="article-share-link">share</a>
+        
+
+        <a data-url="https://bojan88.github.io/simperlog/2013/12/25/gallery-post/" data-id="cj2geqq470006hmwdub1l89mb" class="article-share-link">share</a>
         <div class="article-share-box">
   <div class="article-share-links">
     <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbojan88.github.io%2Fsimperlog%2F2013%2F12%2F25%2Fgallery-post%2F" class="article-share-twitter" target="_blank" title="Twitter"></a>
     <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fbojan88.github.io%2Fsimperlog%2F2013%2F12%2F25%2Fgallery-post%2F" class="article-share-facebook" target="_blank" title="Facebook"></a>
-    <a href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fbojan88.github.io%2Fsimperlog%2F2013%2F12%2F25%2Fgallery-post%2F" class="article-share-pinterest" target="_blank" title="Pinterest"></a>
+    <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fbojan88.github.io%2Fsimperlog%2F2013%2F12%2F25%2Fgallery-post%2F" class="article-share-linkedin" target="_blank" title="LinkedIn"></a>
     <a href="https://plus.google.com/share?url=https%3A%2F%2Fbojan88.github.io%2Fsimperlog%2F2013%2F12%2F25%2Fgallery-post%2F" class="article-share-google" target="_blank" title="Google+"></a>
   </div>
 </div>
 
-        
       </footer>
     
   </div>
@@ -175,6 +177,11 @@ function appendCss() {
     </div>
   </div>
 </footer>
+
+    
+
+
+
 
   </div>
 </body>

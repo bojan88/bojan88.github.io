@@ -13,15 +13,17 @@
 <meta name="twitter:title" content="Hexo">
   
   
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-  
+
+  <script type="text/javascript">
+  function jqueryLoaded() {
+    window.postMessage('jquery-load', '*');
+  }
+  </script>
+
   <link rel="stylesheet" href="/simperlog/css/style.css">
-  
 
-  <script defer async src="https://use.fontawesome.com/a49b4f783c.js"></script>
-
+  <script defer src="https://use.fontawesome.com/a49b4f783c.js"></script>
+  <script defer src="//code.jquery.com/jquery-3.2.1.min.js" onload="jqueryLoaded()"></script>
   <script defer src="/simperlog/js/script.js"></script>
 </head>
 
@@ -159,6 +161,11 @@
     </div>
   </div>
 </footer>
+
+    
+
+
+
 
   </div>
 </body>
